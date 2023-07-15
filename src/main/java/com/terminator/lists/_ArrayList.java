@@ -13,6 +13,7 @@ public class _ArrayList {
      *  List(Interface) is an ordered Collection of elements which may contain duplicates.
      *  It is an interface that extends the Collection interface.
      * 
+     *  Default size : 10
      */
 
     public static void main(String[] args) {
