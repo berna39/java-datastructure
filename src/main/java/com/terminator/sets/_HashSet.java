@@ -10,7 +10,6 @@ public class _HashSet {
      * 
      *  we need a Hashet when:
      *      - we don't want duplicate data
-     *      - we need to perform frequent search
      *      - we can store all type of data
      *      - we don't care about inserting order
      *      - we don't need to use indexes (we'll be using hashcode to search elements)
@@ -26,11 +25,17 @@ public class _HashSet {
      *  element and copy the current content into it...and the old will be cleared by the garbage collector
      *  
      *  NOTE: the HashSet doesn't have it's own specifics methods, it implements all the Collection method
+     * 
+     *  IMPORTANT: The important thing about HashSet<T> is right there in the name: it's a SET. The only things 
+     *  you can do with a single set is to establish what its members are, and to check whether an item is a member.
+        Asking if you can retrieve a single element (e.g. set[45]) is misunderstanding the concept of the set. 
+        There's no such thing as the 45th element of a set. Items in a set have no ordering. The sets {1, 2, 3} 
+        and {2, 3, 1} are identical in every respect because they have the same membership, and membership is all 
+        that matters.
      */
     
     public static void main(String[] args) {
         basics();
-
         iteration();
     }
 
