@@ -8,13 +8,14 @@ import java.util.List;
 public class _ArrayList {
     
     /*
-     *  Interface : List
-     * 
-     *  List(Interface) is an ordered Collection of elements which may contain duplicates.
-     *  It is an interface that extends the Collection interface.
-     * 
-     *  Default size : 10
-     */
+    *   Interface : List
+    * 
+    *   List(Interface) is an ordered Collection of elements which may contain duplicates.
+    *   It is an interface that extends the Collection interface.
+    * 
+    *   Default size : 10
+    *   Load factor: 0.75
+    */
 
     public static void main(String[] args) {
 
@@ -32,11 +33,11 @@ public class _ArrayList {
 
         // Using the List Interface
         List<Integer> alOne = new ArrayList<>(); // when we know the type of data
-        List<Object> alTwo = new ArrayList<>();  // when we don't know the type of data
+        // List<Object> alTwo = new ArrayList<>();  // when we don't know the type of data
         
         // Using the ArrayList Class
-        ArrayList<String> alThree = new ArrayList<>(); // when we know the type of data
-        ArrayList<Object> alFour = new ArrayList<>(); // when we don't know the type of data
+        // ArrayList<String> alThree = new ArrayList<>(); // when we know the type of data
+        // ArrayList<Object> alFour = new ArrayList<>(); // when we don't know the type of data
 
         // ------ List Interface Methods --------- // 
 
@@ -48,7 +49,8 @@ public class _ArrayList {
         alOne.clear(); // removes all elements
         alOne.toArray(); // Convert the ArrayList to Object array ( Object[] )
         /* alOne.retainAll(Collection<? extends Integer> c); // removes all elements except c elements
-           alOne.addAll(Collection<? extends Integer> c); // adds all elements of c */
+           alOne.addAll(Collection<? extends Integer> c); // adds all elements of c 
+        */
     }
 
     private static void methods() {
@@ -120,7 +122,7 @@ public class _ArrayList {
         // For others operations like sorting, ... we'll be using the Collections interface
         Collections.sort(arrayOne);  // to sort the array's elements
         System.out.println("Sorted : " + arrayOne); 
-        Collections.sort(arrayOne, Collections.reverseOrder()); 
+        Collections.sort(arrayOne, Collections.reverseOrder()); // to reverse the order
         System.out.println("Order reversed : " + arrayOne); 
 
 
