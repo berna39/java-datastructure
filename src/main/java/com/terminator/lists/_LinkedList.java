@@ -7,13 +7,13 @@ import java.util.LinkedList;
 public class _LinkedList {
 
     /*
-     *  Interface : List & Queue
-     *  
-     * This data structure need to be used when :  
-     *      - we don't have many retrieving operations
-     *      - we have many adding and deleting operation
-     * 
-     */
+    *  Interface : List & Queue
+    *  
+    * This data structure need to be used when :  
+    *      - we don't have many retrieving operations
+    *      - we have many adding and deleting operation
+    * 
+    */
     
     public static void main(String[] args) {
         
@@ -79,7 +79,6 @@ public class _LinkedList {
         System.out.println(" ===== using for loop ====");
         for (int i = 0; i < ll.size(); i++)
             System.out.println(ll.get(i));
-
 
         // for..each loop
         System.out.println(" ===== using for...each loop ====");
