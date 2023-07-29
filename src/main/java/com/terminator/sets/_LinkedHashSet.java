@@ -7,7 +7,7 @@ public class _LinkedHashSet {
     /*
      *  Interface Set
      * 
-     *  this is a HasSet with insertion order preserved
+     *  this is a HashSet with insertion order preserved
      *  has the same method with the HashSet
      *  has a hashTabe + LinkedList
      * 
